@@ -1,0 +1,54 @@
+.c-form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  form{
+    width: 100%;
+  }
+  label{
+    display: block;
+    width: 100%;
+    padding-bottom: 16px;
+  }
+  input{
+    display: block;
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+    height: 60px;
+    padding-left: 16px;
+    padding-right: 16px;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    &::placeholder{
+      @include transition(text-indent,.5s);
+      font-size: 16px;
+      text-overflow:ellipsis;
+      text-indent: 0px;
+      font-family: 'Roboto', sans-serif;
+    }
+    &:focus::placeholder{
+      @include transition(text-indent,.5s);
+      text-indent: 500px;
+    }
+  }
+  button{
+    background-color: $bg;
+    height: 60px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    @include transition();
+    &:hover{
+      transform: scale(1.05);
+    }
+  }
+
+}

@@ -55,7 +55,6 @@ $mq-breakpoints: (
         lg:                   1024px,
         xl:                   1230px,
         xxl:                  1900px
-
 ) !default;
 
 
@@ -63,8 +62,5 @@ $mq-breakpoints: (
   Project variables
   ======
 */
-$body-bg: #333333;
-$dark: #333333;
-$content-bg: #cccccc;
 $font-family: 'Roboto', sans-serif;
-$container: 640px;
+$bg: #25bfd0;

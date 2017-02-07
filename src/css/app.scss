@@ -3,9 +3,9 @@
 // 3rd party
 @import
   "variables",
-  "vendor/normalize";
-  //"vendor/mq";
-  //"../vendor/flex-sass-grid-generator/src/scss/flex-sass-grid-generator",
+  "vendor/normalize",
+  "vendor/mq",
+  "../vendor/flex-sass-grid-generator/src/scss/flex-sass-grid-generator";
   //"vendor/_animate.scss";
 
 // Abstracts
@@ -23,6 +23,8 @@
 
 // Blocks
 @import "../components/page-header/page-header";
-@import "../components/categories/categories";
-@import "../components/ads/ads";
+@import "../components/lead-screen/lead-screen";
+@import "../components/form/form";
+@import "../components/promo/promo";
+@import "../components/features/features";
 @import "../components/page-footer/page-footer";

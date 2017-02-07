@@ -1,0 +1,62 @@
+section.lead-screen{
+  background-image: url(../img/bg/lead.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+
+  .overlay{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+  }
+
+  .container, .row, .c-form, .lead {
+    height: 100%;
+  }
+
+  .c-form{
+    position: relative;
+    z-index: 7;
+    form{
+      width: 80%;
+    }
+  }
+
+  .lead{
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 7;
+
+    h1{
+      font-size: 48px;
+      margin-bottom: 0;
+      @include mq($from: xs, $until: md) {
+        font-size: 25px;
+      }
+    }
+    h2 {
+      font-size: 25px;
+      @include mq($from: xs, $until: md) {
+        font-size: 14px;
+      }
+    }
+    h3{
+      font-size: 20px;
+      @include mq($from: xs, $until: md) {
+        font-size: 12px;
+      }
+    }
+
+    h1, h2, h3{
+      color: #fff;
+      text-shadow: 1px 1px 2px #333;
+    }
+  }
+
+}

@@ -1,16 +1,13 @@
 header.page-header
     .container
-        .row._justify-beetwen
-            - for (var n=0; n<2; ++n)
-                .btn-group
-                    ul.menu
-                        - for (var i=0; i<3; ++i)
-                            li.item
-                                a(href="javascript:void(0)").link Кнопка меню
         .row
-            .logo-block
-                img(src="http://placehold.it/640x150/dddddd?text=logo" alt="logotype")
-        .row
-            form.search-form._d-flex._justify-beetwen
-                input(type="search" placeholder="Поиск").search
-                button.submit Найти
+            .column.-xs-4.-md-2
+                .c-logo
+                    img(src="img/pics/ossp-logo.png" alt="Администратор Общего Собрания Собственников Помещений")
+            .column.-md-6._pr0._md-hidden-down
+                .c-contacts
+                    a(href="tel:89778633677") 8(977)863-3677
+                    a(href="mailto:sobraniedoma-shkola@mail.ru") sobraniedoma-shkola@mail.ru
+            .column.-lg-4._pl0.-xs-8._pr0
+                .c-order
+                    a(href="#leadForm") Заказать звонок

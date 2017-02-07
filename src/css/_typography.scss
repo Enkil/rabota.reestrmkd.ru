@@ -1,9 +1,0 @@
-a{
-  @include transition(color, .5s);
-  &:hover{
-    color: darkred;
-  }
-  &:active{
-    color: red;
-  }
-}
