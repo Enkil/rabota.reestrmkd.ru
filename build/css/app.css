@@ -473,6 +473,15 @@ section {
   margin: 50px 0;
 }
 
+section.map {
+  height: 500px;
+  margin: 0;
+}
+
+section.map #map {
+  height: 100%;
+}
+
 header.page-header {
   position: fixed;
   z-index: 10;
@@ -591,7 +600,7 @@ section.lead-screen .overlay {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: rgba(0,0,0,.3);
+  background: rgba(0,0,0,.4);
 }
 
 section.lead-screen .container,section.lead-screen .row,section.lead-screen .c-form,section.lead-screen .lead {
@@ -648,6 +657,12 @@ section.lead-screen .lead h1,section.lead-screen .lead h2,section.lead-screen .l
   justify-content: center;
 }
 
+.c-form p {
+  font-size: 10px;
+  color: #fff;
+  text-shadow: 1px 1px 2px #333;
+}
+
 .c-form form {
   width: 100%;
 }
@@ -656,6 +671,10 @@ section.lead-screen .lead h1,section.lead-screen .lead h2,section.lead-screen .l
   display: block;
   width: 100%;
   padding-bottom: 16px;
+}
+
+.c-form label.-error {
+  color: red;
 }
 
 .c-form input {
@@ -674,8 +693,6 @@ section.lead-screen .lead h1,section.lead-screen .lead h2,section.lead-screen .l
 .c-form input::-webkit-input-placeholder {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  -webkit-transition: text-indent .5s ease 0s;
-  transition: text-indent .5s ease 0s;
   text-indent: 0;
   text-overflow: ellipsis;
 }
@@ -683,8 +700,6 @@ section.lead-screen .lead h1,section.lead-screen .lead h2,section.lead-screen .l
 .c-form input::-moz-placeholder {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  -webkit-transition: text-indent .5s ease 0s;
-  transition: text-indent .5s ease 0s;
   text-indent: 0;
   text-overflow: ellipsis;
 }
@@ -692,8 +707,6 @@ section.lead-screen .lead h1,section.lead-screen .lead h2,section.lead-screen .l
 .c-form input:-ms-input-placeholder {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  -webkit-transition: text-indent .5s ease 0s;
-  transition: text-indent .5s ease 0s;
   text-indent: 0;
   text-overflow: ellipsis;
 }
@@ -701,34 +714,12 @@ section.lead-screen .lead h1,section.lead-screen .lead h2,section.lead-screen .l
 .c-form input::placeholder {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  -webkit-transition: text-indent .5s ease 0s;
-  transition: text-indent .5s ease 0s;
   text-indent: 0;
   text-overflow: ellipsis;
 }
 
-.c-form input:focus::-webkit-input-placeholder {
-  -webkit-transition: text-indent .5s ease 0s;
-  transition: text-indent .5s ease 0s;
-  text-indent: 500px;
-}
-
-.c-form input:focus::-moz-placeholder {
-  -webkit-transition: text-indent .5s ease 0s;
-  transition: text-indent .5s ease 0s;
-  text-indent: 500px;
-}
-
-.c-form input:focus:-ms-input-placeholder {
-  -webkit-transition: text-indent .5s ease 0s;
-  transition: text-indent .5s ease 0s;
-  text-indent: 500px;
-}
-
-.c-form input:focus::placeholder {
-  -webkit-transition: text-indent .5s ease 0s;
-  transition: text-indent .5s ease 0s;
-  text-indent: 500px;
+.c-form input.-error {
+  border: 1px solid red;
 }
 
 .c-form button {
@@ -750,6 +741,46 @@ section.lead-screen .lead h1,section.lead-screen .lead h2,section.lead-screen .l
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
   transform: scale(1.05);
+}
+
+section.lead-form {
+  position: relative;
+  height: 500px;
+  margin: 0;
+  padding: 50px 0;
+  background-image: url(../img/bg/idea.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section.lead-form .overlay {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.4);
+}
+
+section.lead-form .footer-form {
+  position: relative;
+  z-index: 7;
+}
+
+section.lead-form h1 {
+  font-size: 48px;
+  margin-bottom: 0;
+}
+
+section.lead-form h2 {
+  font-size: 25px;
+}
+
+section.lead-form h2,section.lead-form h3 {
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 2px #333;
 }
 
 section.c-promo h2 {
@@ -783,6 +814,15 @@ section.c-features .feature .svg svg {
   width: 100%;
   height: 100px;
   fill: #25bfd0;
+}
+
+footer {
+  background-color: #25bfd0;
+}
+
+footer ul.contacts {
+  list-style: none;
+  color: #fff;
 }
 
 @media (min-width: 50em) and (max-width: 63.99em) {
@@ -2492,5 +2532,13 @@ section.c-features .feature .svg svg {
 
   section.lead-screen .lead h3 {
     font-size: 12px;
+  }
+
+  section.lead-form h1 {
+    font-size: 25px;
+  }
+
+  section.lead-form h2 {
+    font-size: 14px;
   }
 }
